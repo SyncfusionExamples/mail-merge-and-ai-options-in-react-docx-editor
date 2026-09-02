@@ -3,8 +3,10 @@
 
 ## Introduction
 
+
 This sample demonstrates document editing, Mail Merge, and reusable document sections using the Syncfusion<sup style="font-size:70%">&reg;</sup> [React DOCX Editor](https://www.syncfusion.com/docx-editor-sdk/react-docx-editor?utm_source=github&utm_medium=listing&utm_campaign=github-github-documenteditor-examples) (Document Editor) in client and an ASP.NET Core Web API.
----
+
+
 ## Features
 
 ### AI-Assisted Editing
@@ -187,7 +189,7 @@ This demo provides an overview of the main capabilities implemented in the sampl
 - **Reusable Sections** – Add a DOCX section, save it on the server, and reuse it from the application.
 - **DOCX Editing** – Open and edit a Word document directly in the browser using Syncfusion DocumentEditor.
 - **Mail Merge** – Use the provided JSON data with a DOCX template to generate a merged document.
-- **AI Assist** – Select content and use AI-powered actions such as Generate, Rephrase, Grammar Improvement, Translation, and Chat.
+- **AI Assist** – Select content and use AI-powered actions such as Generate, Rephrase, Grammar Improvement, and Translation.
 
 
 ### Demo
