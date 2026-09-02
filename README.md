@@ -194,7 +194,7 @@ This demo provides an overview of the main capabilities implemented in the sampl
 
 ### Demo
 
-![Mail-Merge-AI-Editing-in-React-DOCX-Editor](assets/Mail-Merge-AI-Editing-in-React-DOCX-Editor.gif)
+![Mail-Merge-AI-Editing-in-React-DOCX-Editor](images/Mail-Merge-AI-Editing-in-React-DOCX-Editor.gif)
 -------------------------------------------------------------------------
 ## APIs
 
