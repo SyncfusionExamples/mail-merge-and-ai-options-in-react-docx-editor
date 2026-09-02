@@ -70,9 +70,6 @@ The repository contains the following configuration section. Configure the chat 
 
 ``` json
 "AzureOpenAI": {
-  "Endpoint": "",
-  "ApiKey": "",
-  "DeploymentName": "",
   "ChatEndpoint": "",
   "ChatApiKey": "",
   "ChatDeploymentName": ""
@@ -94,16 +91,6 @@ The default configuration is:
 ``` javascript
 export const API_BASE_URL = 'http://localhost:62870';
 export const SERVICE_URL = `${API_BASE_URL}/api/DocumentEditor/`;
-```
-
-Therefore, the default API URLs are:
-
-``` text
-Web API Base URL:
-http://localhost:62870
-
-DocumentEditor Service URL:
-http://localhost:62870/api/DocumentEditor/
 ```
 
 If the Web API is deployed to Azure, update `API_BASE_URL`.
@@ -208,14 +195,13 @@ http://localhost:62870/api/DocumentEditor/
 ```
 | HTTP Method | API | Usage in the Sample |
 |-------------|-----|---------------------|
-| `POST` | `/api/DocumentEditor/Process` | Sends AI prompts/messages from the React AI Assist and chat UI to Azure OpenAI through the server. |
+| `POST` | `/api/DocumentEditor/Process` | Sends AI prompts/messages from the AI Assist UI to Azure OpenAI through the server. |
 | `POST` | `/api/DocumentEditor/Import` | Converts an uploaded DOCX document into SFDT for opening in Syncfusion DocumentEditor. Also used when adding a reusable DOCX section. |
 | `POST` | `/api/DocumentEditor/LoadString` | Converts AI-generated HTML content into SFDT so the generated content can be inserted into DocumentEditor. |
 | `POST` | `/api/DocumentEditor/MailMerge` | Executes Mail Merge using the current DOCX document and the selected JSON data. Returns the merged document as SFDT. |
 | `GET` | `/api/DocumentEditor/GetSections` | Loads the persisted reusable section catalog when the application starts. |
 | `POST` | `/api/DocumentEditor/SaveSection` | Converts an uploaded DOCX section to SFDT and persists the section metadata/content in `wwwroot/Data/sections.json`. |
 | `POST` | `/api/DocumentEditor/Save` | DocumentEditor server service used to save the editor document in the requested document format. |
-| `POST` | `/api/DocumentEditor/ExportSFDT` | DocumentEditor server service used for document format conversion from SFDT. |
 
 ## Resources
 
@@ -233,4 +219,4 @@ Request new feature through [Syncfusion® feedback portal](https://www.syncfusi
 
 ## License
 
-This is a commercial product and requires a paid license for possession or use Syncfusion's licensed software, including this component, is subject to the terms and conditions of [Syncfusion's EULA](https://www.syncfusion.com/license/studio/34.1.29/syncfusion_essential_studio_eula.pdf?utm_source=github&utm_medium=listing&utm_campaign=github-github-documenteditor-examples). You can purchase a licnense [here](https://www.syncfusion.com/sales/products?utm_source=github&utm_medium=listing&utm_campaign=github-github-documenteditor-examples) or start a free 30\-day trial [here](https://www.syncfusion.com/account/manage-trials/start-trials?utm_source=github&utm_medium=listing&utm_campaign=github-github-documenteditor-examples). 
+This is a commercial product and requires a paid license for possession or use Syncfusion's licensed software, including this component, is subject to the terms and conditions of [Syncfusion's EULA](https://www.syncfusion.com/license/studio/syncfusion_essential_studio_eula.pdf?utm_source=github&utm_medium=listing&utm_campaign=github-github-documenteditor-examples). You can purchase a licnense [here](https://www.syncfusion.com/sales/products?utm_source=github&utm_medium=listing&utm_campaign=github-github-documenteditor-examples) or start a free 30\-day trial [here](https://www.syncfusion.com/account/manage-trials/start-trials?utm_source=github&utm_medium=listing&utm_campaign=github-github-documenteditor-examples). 
